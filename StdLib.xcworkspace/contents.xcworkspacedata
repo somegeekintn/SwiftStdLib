@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:StdLib_A_thru_C.playground">
+   </FileRef>
+   <FileRef
+      location = "group:StdLib_D_thru_F.playground">
+   </FileRef>
+   <FileRef
+      location = "group:StdLib_G_thru_L.playground">
+   </FileRef>
+</Workspace>
