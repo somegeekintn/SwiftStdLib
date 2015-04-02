@@ -10,4 +10,10 @@
    <FileRef
       location = "group:StdLib_G_thru_L.playground">
    </FileRef>
+   <FileRef
+      location = "group:StdLib_M_thru_N.playground">
+   </FileRef>
+   <FileRef
+      location = "group:StdLib_O_thru_P.playground">
+   </FileRef>
 </Workspace>

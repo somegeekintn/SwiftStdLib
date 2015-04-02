@@ -65,10 +65,10 @@ join(" | ", stdStrList)
 
 last(stdStrList)		// synonomous with stdStrList.last
 
-//func lazy<S : CollectionType where S.Index : ForwardIndexType>(s: S) -> LazyForwardCollection<S>
-//func lazy<S : CollectionType where S.Index : BidirectionalIndexType>(s: S) -> LazyBidirectionalCollection<S>
-//func lazy<S : CollectionType where S.Index : RandomAccessIndexType>(s: S) -> LazyRandomAccessCollection<S>
-//func lazy<S : SequenceType>(s: S) -> LazySequence<S>
+// func lazy<S : CollectionType where S.Index : ForwardIndexType>(s: S) -> LazyForwardCollection<S>
+// func lazy<S : CollectionType where S.Index : BidirectionalIndexType>(s: S) -> LazyBidirectionalCollection<S>
+// func lazy<S : CollectionType where S.Index : RandomAccessIndexType>(s: S) -> LazyRandomAccessCollection<S>
+// func lazy<S : SequenceType>(s: S) -> LazySequence<S>
 
 var lazyItems = lazy(stdStrList).filter{ $0 > "d" }
 
