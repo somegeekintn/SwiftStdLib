@@ -16,4 +16,7 @@
    <FileRef
       location = "group:StdLib_O_thru_P.playground">
    </FileRef>
+   <FileRef
+      location = "group:StdLib_R_thru_R.playground">
+   </FileRef>
 </Workspace>
