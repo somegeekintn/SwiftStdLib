@@ -2,7 +2,28 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:StdLib_A_thru_C.playground">
+      location = "group:abs.playground">
+   </FileRef>
+   <FileRef
+      location = "group:advance.playground">
+   </FileRef>
+   <FileRef
+      location = "group:alignof.playground">
+   </FileRef>
+   <FileRef
+      location = "group:alignofValue.playground">
+   </FileRef>
+   <FileRef
+      location = "group:assert.playground">
+   </FileRef>
+   <FileRef
+      location = "group:assertionFailure.playground">
+   </FileRef>
+   <FileRef
+      location = "group:contains.playground">
+   </FileRef>
+   <FileRef
+      location = "group:count.playground">
    </FileRef>
    <FileRef
       location = "group:StdLib_D_thru_F.playground">
@@ -18,5 +39,8 @@
    </FileRef>
    <FileRef
       location = "group:StdLib_R_thru_R.playground">
+   </FileRef>
+   <FileRef
+      location = "group:StdLib_S_thru_S.playground">
    </FileRef>
 </Workspace>
