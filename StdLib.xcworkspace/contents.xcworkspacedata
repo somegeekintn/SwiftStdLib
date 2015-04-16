@@ -26,6 +26,27 @@
       location = "group:count.playground">
    </FileRef>
    <FileRef
+      location = "group:debugPrint.playground">
+   </FileRef>
+   <FileRef
+      location = "group:debugPrintln.playground">
+   </FileRef>
+   <FileRef
+      location = "group:distance.playground">
+   </FileRef>
+   <FileRef
+      location = "group:dropFirst.playground">
+   </FileRef>
+   <FileRef
+      location = "group:dropLast.playground">
+   </FileRef>
+   <FileRef
+      location = "group:dump.playground">
+   </FileRef>
+   <FileRef
+      location = "group:enumerate.playground">
+   </FileRef>
+   <FileRef
       location = "group:StdLib_D_thru_F.playground">
    </FileRef>
    <FileRef

@@ -27,6 +27,6 @@
 
 println("excuting...")
 
-assertionFailure("Something has gone horribly wrong", file: __FILE__, line: __LINE__)
+assertionFailure("Something has gone horribly wrong", file: __FILE__, line: __LINE__)	// See Timeline for details
 
 println("excuting...")
