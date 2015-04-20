@@ -27,6 +27,6 @@
 
 println("excuting...")
 
-assertionFailure("Something has gone horribly wrong", file: __FILE__, line: __LINE__)	// See Timeline for details
+assertionFailure("Something has gone horribly wrong", file: "assertionFailure.playground", line: __LINE__)	// See Timeline for details, also __FILE__ is useless in playgrounds
 
 println("excuting...")

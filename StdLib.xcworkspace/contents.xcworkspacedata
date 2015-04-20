@@ -47,7 +47,25 @@
       location = "group:enumerate.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_D_thru_F.playground">
+      location = "group:equal.playground">
+   </FileRef>
+   <FileRef
+      location = "group:extend.playground">
+   </FileRef>
+   <FileRef
+      location = "group:fatalError.playground">
+   </FileRef>
+   <FileRef
+      location = "group:filter.playground">
+   </FileRef>
+   <FileRef
+      location = "group:find.playground">
+   </FileRef>
+   <FileRef
+      location = "group:first.playground">
+   </FileRef>
+   <FileRef
+      location = "group:flatMap.playground">
    </FileRef>
    <FileRef
       location = "group:StdLib_G_thru_L.playground">
