@@ -83,6 +83,15 @@
       location = "group:isUniquelyReferenced.playground">
    </FileRef>
    <FileRef
+      location = "group:isUniquelyReferencedNonObjC.playground">
+   </FileRef>
+   <FileRef
+      location = "group:join.playground">
+   </FileRef>
+   <FileRef
+      location = "group:last.playground">
+   </FileRef>
+   <FileRef
       location = "group:StdLib_G_thru_L.playground">
    </FileRef>
    <FileRef
