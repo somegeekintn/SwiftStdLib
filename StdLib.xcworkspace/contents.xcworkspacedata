@@ -68,6 +68,21 @@
       location = "group:flatMap.playground">
    </FileRef>
    <FileRef
+      location = "group:getVaList.playground">
+   </FileRef>
+   <FileRef
+      location = "group:indices.playground">
+   </FileRef>
+   <FileRef
+      location = "group:insert.playground">
+   </FileRef>
+   <FileRef
+      location = "group:isEmpty.playground">
+   </FileRef>
+   <FileRef
+      location = "group:isUniquelyReferenced.playground">
+   </FileRef>
+   <FileRef
       location = "group:StdLib_G_thru_L.playground">
    </FileRef>
    <FileRef
