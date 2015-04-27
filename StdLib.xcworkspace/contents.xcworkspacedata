@@ -92,10 +92,34 @@
       location = "group:last.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_G_thru_L.playground">
+      location = "group:lazy.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_M_thru_N.playground">
+      location = "group:lexicographicalCompare.playground">
+   </FileRef>
+   <FileRef
+      location = "group:map.playground">
+   </FileRef>
+   <FileRef
+      location = "group:max.playground">
+   </FileRef>
+   <FileRef
+      location = "group:maxElement.playground">
+   </FileRef>
+   <FileRef
+      location = "group:min.playground">
+   </FileRef>
+   <FileRef
+      location = "group:minElement.playground">
+   </FileRef>
+   <FileRef
+      location = "group:numericCast.playground">
+   </FileRef>
+   <FileRef
+      location = "group:overlaps.playground">
+   </FileRef>
+   <FileRef
+      location = "group:partition.playground">
    </FileRef>
    <FileRef
       location = "group:StdLib_O_thru_P.playground">
