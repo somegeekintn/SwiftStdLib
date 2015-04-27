@@ -122,7 +122,19 @@
       location = "group:partition.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_O_thru_P.playground">
+      location = "group:precondition.playground">
+   </FileRef>
+   <FileRef
+      location = "group:preconditionFailure.playground">
+   </FileRef>
+   <FileRef
+      location = "group:prefix.playground">
+   </FileRef>
+   <FileRef
+      location = "group:print.playground">
+   </FileRef>
+   <FileRef
+      location = "group:println.playground">
    </FileRef>
    <FileRef
       location = "group:StdLib_R_thru_R.playground">
