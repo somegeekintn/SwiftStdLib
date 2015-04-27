@@ -137,7 +137,25 @@
       location = "group:println.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_R_thru_R.playground">
+      location = "group:reduce.playground">
+   </FileRef>
+   <FileRef
+      location = "group:reflect.playground">
+   </FileRef>
+   <FileRef
+      location = "group:removeAll.playground">
+   </FileRef>
+   <FileRef
+      location = "group:removeAtIndex.playground">
+   </FileRef>
+   <FileRef
+      location = "group:removeLast.playground">
+   </FileRef>
+   <FileRef
+      location = "group:removeRange.playground">
+   </FileRef>
+   <FileRef
+      location = "group:reverse.playground">
    </FileRef>
    <FileRef
       location = "group:StdLib_S_thru_S.playground">
