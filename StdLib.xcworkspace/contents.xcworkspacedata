@@ -193,4 +193,10 @@
    <FileRef
       location = "group:swap.playground">
    </FileRef>
+   <FileRef
+      location = "group:toDebugString.playground">
+   </FileRef>
+   <FileRef
+      location = "group:toString.playground">
+   </FileRef>
 </Workspace>
