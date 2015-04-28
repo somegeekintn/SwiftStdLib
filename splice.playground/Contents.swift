@@ -2,18 +2,16 @@
 // Swift Standard Library examples (examples not guaranteed to be useful)
 // ---------------------------------------------------------------------------------------------------------------------
 
-/// O(1) if T.Index is RandomAccessIndexType; O(N) otherwise.
+/// Insert `newElements` into `x` at index `i`
+///
+/// Invalidates all indices with respect to `x`.
+///
+/// Complexity: O(\ `count(x) + count(newElements)`\ ).
 
 // ---------------------------------------------------------------------------------------------------------------------
-// func count<T : _CollectionType>(x: T) -> T.Index.Distance
+// func splice<C : RangeReplaceableCollectionType, S : CollectionType where C.Generator.Element == C.Generator.Element>(inout x: C, newElements: S, atIndex i: C.Index)
 // ---------------------------------------------------------------------------------------------------------------------
 
-var intArray = [Int](1...20)
-let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
-let animalLegs = [ ("dog", 4), ("cat", 4), ("duck", 2), ("chicken", 2), ("cow", 4), ("snake", 0), ("bee", 6) ]
+var animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 
-count(intArray)
-count(animals)
-count(animalLegs)
-count(10...100)
-count(10..<100)
+splice(&animals, [ "monkey", "goat", "lemur" ], atIndex: 3)

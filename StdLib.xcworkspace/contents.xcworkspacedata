@@ -158,6 +158,21 @@
       location = "group:reverse.playground">
    </FileRef>
    <FileRef
-      location = "group:StdLib_S_thru_S.playground">
+      location = "group:sizeof.playground">
+   </FileRef>
+   <FileRef
+      location = "group:sizeofValue.playground">
+   </FileRef>
+   <FileRef
+      location = "group:sort.playground">
+   </FileRef>
+   <FileRef
+      location = "group:sorted.playground">
+   </FileRef>
+   <FileRef
+      location = "group:splice.playground">
+   </FileRef>
+   <FileRef
+      location = "group:split.playground">
    </FileRef>
 </Workspace>
