@@ -175,4 +175,22 @@
    <FileRef
       location = "group:split.playground">
    </FileRef>
+   <FileRef
+      location = "group:startsWith.playground">
+   </FileRef>
+   <FileRef
+      location = "group:stride.playground">
+   </FileRef>
+   <FileRef
+      location = "group:strideof.playground">
+   </FileRef>
+   <FileRef
+      location = "group:strideofValue.playground">
+   </FileRef>
+   <FileRef
+      location = "group:suffix.playground">
+   </FileRef>
+   <FileRef
+      location = "group:swap.playground">
+   </FileRef>
 </Workspace>
