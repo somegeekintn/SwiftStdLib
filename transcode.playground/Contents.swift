@@ -26,7 +26,7 @@ var utf8Sink = SinkOf<UInt8>{ utf8Array.append($0) }
 transcode(UTF16.self, UTF8.self, utf16Generator, &utf8Sink, stopOnError: true)
 println("utf8Array: \(utf8Array) (\(count(utf8Array)) elements)")
 
-// the follow works intermittently, so a possible misstep above
+// the following works intermittently, so a possible misstep above
 
 //let utf8String = NSString(bytes: utf8Array, length: count(utf8Array), encoding: NSUTF8StringEncoding)
 //println("utf8String: \(utf8String)")

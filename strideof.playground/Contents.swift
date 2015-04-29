@@ -1,14 +1,16 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns the least possible interval between distinct instances of
-/// `T` in memory.  The result is always positive.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func strideof<T>(_: T.Type) -> Int
-// ---------------------------------------------------------------------------------------------------------------------
+# strideof
+----
 
+    func strideof<T>(_: T.Type) -> Int
+
+Returns the least possible interval between distinct instances of
+`T` in memory.  The result is always positive.
+
+*/
 class ExampleClass {
 	var intVar = 1
 	var stringVar = String("string")

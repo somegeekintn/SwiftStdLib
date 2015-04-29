@@ -1,13 +1,15 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns the result of `debugPrint`\ 'ing `x` into a `String`
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func toDebugString<T>(x: T) -> String
-// ---------------------------------------------------------------------------------------------------------------------
+# toDebugString
+----
 
+    func toDebugString<T>(x: T) -> String
+
+Returns the result of `debugPrint`'ing `x` into a `String`
+
+*/
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 
 toDebugString(animals)

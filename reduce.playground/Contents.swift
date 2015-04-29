@@ -1,15 +1,17 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return the result of repeatedly calling `combine` with an
-/// accumulated value initialized to `initial` and each element of
-/// `sequence`, in turn.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func reduce<S : SequenceType, U>(sequence: S, initial: U, combine: @noescape (U, S.Generator.Element) -> U) -> U
-// ---------------------------------------------------------------------------------------------------------------------
+# reduce
+----
 
+    func reduce<S : SequenceType, U>(sequence: S, initial: U, combine: @noescape (U, S.Generator.Element) -> U) -> U
+
+Return the result of repeatedly calling `combine` with an
+accumulated value initialized to `initial` and each element of
+`sequence`, in turn.
+
+*/
 // factorial
 reduce(1...10, 1) { (accum, elem) -> Int in
 	return accum * elem

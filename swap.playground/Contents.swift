@@ -1,13 +1,15 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Exchange the values of `a` and `b`
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func swap<T>(inout a: T, inout b: T)
-// ---------------------------------------------------------------------------------------------------------------------
+# swap
+----
 
+    func swap<T>(inout a: T, inout b: T)
+
+Exchange the values of `a` and `b`
+
+*/
 var x = 23
 var y = 42
 

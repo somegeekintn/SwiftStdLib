@@ -1,17 +1,19 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns the contiguous memory footprint of  `T`.
-///
-/// Does not include any dynamically-allocated or "remote" storage.
-/// In particular, `sizeof(a)`, when `a` is a class instance, is the
-/// same regardless of how many stored properties `a` has.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func sizeofValue<T>(_: T) -> Int
-// ---------------------------------------------------------------------------------------------------------------------
+# sizeofValue
+----
 
+    func sizeofValue<T>(_: T) -> Int
+
+Returns the contiguous memory footprint of  `T`.
+
+Does not include any dynamically-allocated or "remote" storage.
+In particular, `sizeof(a)`, when `a` is a class instance, is the
+same regardless of how many stored properties `a` has.
+
+*/
 class ExampleClass {
 	var intVar = 1
 	var stringVar = String("string")

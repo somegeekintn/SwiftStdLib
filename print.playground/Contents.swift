@@ -1,38 +1,39 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Writes the textual representation of `value` into the stream `target`.
-///
-/// The textual representation is obtained from the `value` using its protocol
-/// conformances, in the following order of preference: `Streamable`,
-/// `Printable`, `DebugPrintable`.
-///
-/// Do not overload this function for your type.  Instead, adopt one of the
-/// protocols mentioned above.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// @inline(never) func print<T, TargetStream : OutputStreamType>(value: T, inout target: TargetStream)
-// ---------------------------------------------------------------------------------------------------------------------
+# print
+----
 
+    @inline(never) func print<T, TargetStream : OutputStreamType>(value: T, inout target: TargetStream)
+
+Writes the textual representation of `value` into the stream `target`.
+
+The textual representation is obtained from the `value` using its protocol
+conformances, in the following order of preference: `Streamable`,
+`Printable`, `DebugPrintable`.
+
+Do not overload this function for your type.  Instead, adopt one of the
+protocols mentioned above.
+
+*/
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 var targetStream = String()
 
 print(animals, &targetStream)
 
 targetStream
+/*:
+    @inline(never) func print<T>(value: T)
 
-/// Writes the textual representation of `value` into the standard output.
-///
-/// The textual representation is obtained from the `value` using its protocol
-/// conformances, in the following order of preference: `Streamable`,
-/// `Printable`, `DebugPrintable`.
-///
-/// Do not overload this function for your type.  Instead, adopt one of the
-/// protocols mentioned above.
+Writes the textual representation of `value` into the standard output.
 
-// ---------------------------------------------------------------------------------------------------------------------
-// @inline(never) func print<T>(value: T)
-// ---------------------------------------------------------------------------------------------------------------------
+The textual representation is obtained from the `value` using its protocol
+conformances, in the following order of preference: `Streamable`,
+`Printable`, `DebugPrintable`.
 
+Do not overload this function for your type.  Instead, adopt one of the
+protocols mentioned above.
+
+*/
 print(animals)

@@ -1,31 +1,33 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Check a necessary condition for making forward progress.
-///
-/// Use this function to detect conditions that must prevent the
-/// program from proceeding even in shipping code.
-///
-/// * In playgrounds and -Onone builds (the default for Xcode's Debug
-///   configuration): if `condition` evaluates to false, stop program
-///   execution in a debuggable state after printing `message`.
-///
-/// * In -O builds (the default for Xcode's Release configuration):
-///   if `condition` evaluates to false, stop program execution.
-///
-/// * In -Ounchecked builds, `condition` is not evaluated, but the
-///   optimizer may assume that it *would* evaluate to `true`. Failure
-///   to satisfy that assumption in -Ounchecked builds is a serious
-///   programming error.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func precondition(condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = default, file: StaticString = default, line: UWord = default)
-// ---------------------------------------------------------------------------------------------------------------------
+# precondition
+----
 
-// precondition is similar to assert except that it will stop program
-// execution even when compiled for Release (-O)
+    func precondition(condition: @autoclosure () -> Bool, _ message: @autoclosure () -> String = default, file: StaticString = default, line: UWord = default)
 
+Check a necessary condition for making forward progress.
+
+Use this function to detect conditions that must prevent the
+program from proceeding even in shipping code.
+
+* In playgrounds and -Onone builds (the default for Xcode's Debug
+  configuration): if `condition` evaluates to false, stop program
+  execution in a debuggable state after printing `message`.
+
+* In -O builds (the default for Xcode's Release configuration):
+  if `condition` evaluates to false, stop program execution.
+
+* In -Ounchecked builds, `condition` is not evaluated, but the
+  optimizer may assume that it *would* evaluate to `true`. Failure
+  to satisfy that assumption in -Ounchecked builds is a serious
+  programming error.
+
+----
+
+_precondition is similar to assert except that it will stop program execution even when compiled for Release (-O)_
+*/
 println("excuting...")
 
 precondition(1 < 2, "No way", file: "precondition.playground", line: __LINE__)
