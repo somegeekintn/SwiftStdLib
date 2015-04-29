@@ -1,14 +1,16 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return an `Array` containing the elements of `source`,
-/// in order, that satisfy the predicate `includeElement`.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func filter<S : SequenceType>(source: S, includeElement: (S.Generator.Element) -> Bool) -> [S.Generator.Element]
-// ---------------------------------------------------------------------------------------------------------------------
+# filter
+----
 
+    func filter<S : SequenceType>(source: S, includeElement: (S.Generator.Element) -> Bool) -> [S.Generator.Element]
+
+Return an `Array` containing the elements of `source`,
+in order, that satisfy the predicate `includeElement`.
+
+*/
 struct Animal {
 	let name :		String
 	let legCount :	Int

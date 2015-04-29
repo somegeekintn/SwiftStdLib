@@ -1,15 +1,16 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return a slice containing all but the first element of `s`.
-///
-/// Requires: `s` is non-empty.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func dropFirst<Seq : Sliceable>(s: Seq) -> Seq.SubSlice
-// ---------------------------------------------------------------------------------------------------------------------
+# dropFirst
+----
 
+    func dropFirst<Seq : Sliceable>(s: Seq) -> Seq.SubSlice
+
+Return a slice containing all but the first element of `s`.
+Requires: `s` is non-empty.
+
+*/
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 let intArray = [Int](1...20)
 

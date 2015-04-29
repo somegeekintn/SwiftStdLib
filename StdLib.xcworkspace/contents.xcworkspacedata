@@ -199,4 +199,7 @@
    <FileRef
       location = "group:toString.playground">
    </FileRef>
+   <FileRef
+      location = "group:transcode.playground">
+   </FileRef>
 </Workspace>

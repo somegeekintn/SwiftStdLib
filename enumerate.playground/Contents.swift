@@ -1,22 +1,24 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return a lazy `SequenceType` containing pairs (*n*, *x*), where
-/// *n*\ s are consecutive `Int`\ s starting at zero, and *x*\ s are
-/// the elements of `base`::
-///
-///   > for (n, c) in enumerate("Swift") { println("\(n): '\(c)'" )}
-///   0: 'S'
-///   1: 'w'
-///   2: 'i'
-///   3: 'f'
-///   4: 't'
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func enumerate<Seq : SequenceType>(base: Seq) -> EnumerateSequence<Seq>
-// ---------------------------------------------------------------------------------------------------------------------
+# enumerate
+----
 
+    func enumerate<Seq : SequenceType>(base: Seq) -> EnumerateSequence<Seq>
+
+Return a lazy `SequenceType` containing pairs (*n*, *x*), where
+*n*s are consecutive `Int`s starting at zero, and *x*s are
+the elements of `base`::
+
+    > for (n, c) in enumerate("Swift") { println("\(n): '\(c)'" )}
+    0: 'S'
+    1: 'w'
+    2: 'i'
+    3: 'f'
+    4: 't'
+
+*/
 for (n, c) in enumerate("Swift") {	// Why not recreate the "official" example?
 	println("\(n): '\(c)'" )
 }

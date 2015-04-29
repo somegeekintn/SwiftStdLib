@@ -1,13 +1,15 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns the minimum memory alignment of `T`.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func alignofValue<T>(_: T) -> Int
-// ---------------------------------------------------------------------------------------------------------------------
+# alignofValue
+----
 
+    func alignofValue<T>(_: T) -> Int
+
+Returns the minimum memory alignment of `T`.
+
+*/
 class ExampleClass {
 	var intVar = 1
 	var stringVar = String("string")

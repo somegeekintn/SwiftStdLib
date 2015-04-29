@@ -1,15 +1,16 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return the absolute value of `x`.
-///
-/// Concrete instances of `SignedNumberType` can specialize this
-/// function by conforming to `AbsoluteValuable`.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func abs<T : SignedNumberType>(x: T) -> T
-// ---------------------------------------------------------------------------------------------------------------------
+# abs
+----
 
+    func abs<T : SignedNumberType>(x: T) -> T
+
+Return the absolute value of `x`.
+Concrete instances of `SignedNumberType` can specialize this
+function by conforming to `AbsoluteValuable`.
+
+*/
 abs(-1)
 abs(-1.3)

@@ -1,19 +1,21 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns a `CVaListPointer` built from `args` that's backed by
-/// autoreleased storage.
-///
-/// .. Warning:: This function is best avoided in favor of
-///    `withVaList`, but occasionally (i.e. in a `class` initializer) you
-///    may find that the language rules don't allow you to use
-///    `withVaList` as intended.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func getVaList(args: [CVarArgType]) -> CVaListPointer
-// ---------------------------------------------------------------------------------------------------------------------
+# getVaList
+----
 
+    func getVaList(args: [CVarArgType]) -> CVaListPointer
+
+Returns a `CVaListPointer` built from `args` that's backed by
+autoreleased storage.
+
+.. Warning:: This function is best avoided in favor of
+   `withVaList`, but occasionally (i.e. in a `class` initializer) you
+   may find that the language rules don't allow you to use
+   `withVaList` as intended.
+
+*/
 import Foundation
 
 func exampleVarArgsFunction(format: String, arguments: CVarArgType...) {

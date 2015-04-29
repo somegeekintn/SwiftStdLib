@@ -1,17 +1,19 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return the range of `x` 's valid index values.
-///
-/// The result's `endIndex` is the same as that of `x`.  Because
-/// `Range` is half-open, iterating the values of the result produces
-/// all valid subscript arguments for `x`, omitting its `endIndex`.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func indices<C : CollectionType>(x: C) -> Range<C.Index>
-// ---------------------------------------------------------------------------------------------------------------------
+# indices
+----
 
+    func indices<C : CollectionType>(x: C) -> Range<C.Index>
+
+Return the range of `x` 's valid index values.
+
+The result's `endIndex` is the same as that of `x`.  Because
+`Range` is half-open, iterating the values of the result produces
+all valid subscript arguments for `x`, omitting its `endIndex`.
+
+*/
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 let animalRange = indices(animals)
 

@@ -1,37 +1,34 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Return an `Array` containing the results of mapping `transform`
-/// over `source` and flattening the result.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// flatMap<S : SequenceType, T>(source: S, transform: @noescape (S.Generator.Element) -> [T]) -> [T]
-// ---------------------------------------------------------------------------------------------------------------------
+# flatMap
+----
 
-// See CollectionType variant examples below. 
+    flatMap<S : SequenceType, T>(source: S, transform: @noescape (S.Generator.Element) -> [T]) -> [T]
 
+Return an `Array` containing the results of mapping `transform`
+over `source` and flattening the result.
 
-/// Return an `Array` containing the results of mapping `transform`
-/// over `source` and flattening the result.
+See CollectionType variant examples below. 
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func flatMap<C : CollectionType, T>(source: C, transform: (C.Generator.Element) -> [T]) -> [T]
-// ---------------------------------------------------------------------------------------------------------------------
+    func flatMap<C : CollectionType, T>(source: C, transform: (C.Generator.Element) -> [T]) -> [T]
 
+Return an `Array` containing the results of mapping `transform`
+over `source` and flattening the result.
+
+*/
 let items = [[1,2],[3,4]]
 
 println(flatMap(items) { $0 })					// similar to the example Apple provided in the release notes
+/*:
+    func flatMap<T, U>(x: T?, f: @noescape (T) -> U?) -> U?
 
+Returns `f(self)!` iff `self` and `f(self)` are not nil.
 
-/// Returns `f(self)!` iff `self` and `f(self)` are not nil.
+see also `func map<T, U>(x: T?, f: @noescape (T) -> U) -> U?`
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func flatMap<T, U>(x: T?, f: @noescape (T) -> U?) -> U?
-// ---------------------------------------------------------------------------------------------------------------------
-
-// see also func map<T, U>(x: T?, f: @noescape (T) -> U) -> U?
-
+*/
 println(map(first(items)) { find($0, 2) })		// notice that basic map returns an Int??
 println(flatMap(first(items)) { find($0, 2) })	// the flatMap version returns Int?
 

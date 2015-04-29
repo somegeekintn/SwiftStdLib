@@ -1,37 +1,42 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns `true` iff `object` is a non-\ `@objc` class instance with a single
-/// strong reference.
-///
-/// * Does *not* modify `object`; the use of `inout` is an
-///   implementation artifact.
-/// * Weak references do not affect the result of this function.
-///  
-/// Useful for implementing the copy-on-write optimization for the
-/// deep storage of value types::
-///
-///   mutating func modifyMe(arg: X) {
-///     if isUniquelyReferenced(&myStorage) {
-///       myStorage.modifyInPlace(arg)
-///     }
-///     else {
-///       myStorage = myStorage.createModified(arg)
-///     }
-///   }
-///
-/// This function is safe to use for `mutating` functions in
-/// multithreaded code because a false positive would imply that there
-/// is already a user-level data race on the value being mutated.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func isUniquelyReferenced<T : NonObjectiveCBase>(inout object: T) -> Bool
-// ---------------------------------------------------------------------------------------------------------------------
+# isUniquelyReferenced
+----
 
-// See ensureUnique for isUniquelyReferenced usage
-// Hat tip to Mike Ash for inspiration: https://www.mikeash.com/pyblog/friday-qa-2015-04-17-lets-build-swiftarray.html
+    func isUniquelyReferenced<T : NonObjectiveCBase>(inout object: T) -> Bool
 
+Returns `true` iff `object` is a non-`@objc` class instance with a single
+strong reference.
+
+* Does *not* modify `object`; the use of `inout` is an
+  implementation artifact.
+* Weak references do not affect the result of this function.
+ 
+Useful for implementing the copy-on-write optimization for the
+deep storage of value types::
+
+    mutating func modifyMe(arg: X) {
+      if isUniquelyReferenced(&myStorage) {
+        myStorage.modifyInPlace(arg)
+      }
+      else {
+        myStorage = myStorage.createModified(arg)
+      }
+    }
+
+This function is safe to use for `mutating` functions in
+multithreaded code because a false positive would imply that there
+is already a user-level data race on the value being mutated.
+
+----
+
+See `ensureUnique` for `isUniquelyReferenced` usage
+
+Hat tip to Mike Ash for inspiration: [Friday Q&A 2015-04-17: Let's Build Swift.Array](https://www.mikeash.com/pyblog/friday-qa-2015-04-17-lets-build-swiftarray.html)
+
+*/
 struct Stack<T> : Printable {
 	typealias StackInfo = (space: Int, depth: Int)
 	typealias StackBuffer = ManagedBuffer<StackInfo,T>

@@ -1,66 +1,67 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns `true` iff `object` is a non-\ `@objc` class instance with
-/// a single strong reference.
-///
-/// * Does *not* modify `object`; the use of `inout` is an
-///   implementation artifact.
-/// * If `object` is an Objective-C class instance, returns `false`.
-/// * Weak references do not affect the result of this function.
-///  
-/// Useful for implementing the copy-on-write optimization for the
-/// deep storage of value types::
-///
-///   mutating func modifyMe(arg: X) {
-///     if isUniquelyReferencedNonObjC(&myStorage) {
-///       myStorage.modifyInPlace(arg)
-///     }
-///     else {
-///       myStorage = self.createModified(myStorage, arg)
-///     }
-///   }
-///
-/// This function is safe to use for `mutating` functions in
-/// multithreaded code because a false positive would imply that there
-/// is already a user-level data race on the value being mutated.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func isUniquelyReferencedNonObjC<T>(inout object: T) -> Bool
-// ---------------------------------------------------------------------------------------------------------------------
+# isUniquelyReferencedNonObjC
+----
 
-/// Returns `true` iff `object` is a non-\ `@objc` class instance with
-/// a single strong reference.
-///
-/// * Does *not* modify `object`; the use of `inout` is an
-///   implementation artifact.
-/// * If `object` is an Objective-C class instance, returns `false`.
-/// * Weak references do not affect the result of this function.
-///  
-/// Useful for implementing the copy-on-write optimization for the
-/// deep storage of value types::
-///
-///   mutating func modifyMe(arg: X) {
-///     if isUniquelyReferencedNonObjC(&myStorage) {
-///       myStorage.modifyInPlace(arg)
-///     }
-///     else {
-///       myStorage = self.createModified(myStorage, arg)
-///     }
-///   }
-///
-/// This function is safe to use for `mutating` functions in
-/// multithreaded code because a false positive would imply that there
-/// is already a user-level data race on the value being mutated.
+    func isUniquelyReferenced<T : NonObjectiveCBase>(inout object: T) -> Bool
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func isUniquelyReferencedNonObjC<T>(inout object: T?) -> Bool
-// ---------------------------------------------------------------------------------------------------------------------
+Returns `true` iff `object` is a non-`@objc` class instance with
+a single strong reference.
 
-// A similar example to that in isUniquelyReferenced except here we're using optionals
-// Not shown is the non-optional version or testing it with Objective-C objects
+* Does *not* modify `object`; the use of `inout` is an
+  implementation artifact.
+* If `object` is an Objective-C class instance, returns `false`.
+* Weak references do not affect the result of this function.
+ 
+Useful for implementing the copy-on-write optimization for the
+deep storage of value types::
 
+    mutating func modifyMe(arg: X) {
+      if isUniquelyReferencedNonObjC(&myStorage) {
+        myStorage.modifyInPlace(arg)
+      }
+      else {
+        myStorage = self.createModified(myStorage, arg)
+      }
+    }
+
+This function is safe to use for `mutating` functions in
+multithreaded code because a false positive would imply that there
+is already a user-level data race on the value being mutated.
+
+    func isUniquelyReferencedNonObjC<T>(inout object: T?) -> Bool
+    
+Returns `true` iff `object` is a non-\ `@objc` class instance with
+a single strong reference.
+
+* Does *not* modify `object`; the use of `inout` is an
+  implementation artifact.
+* If `object` is an Objective-C class instance, returns `false`.
+* Weak references do not affect the result of this function.
+ 
+Useful for implementing the copy-on-write optimization for the
+deep storage of value types::
+
+    mutating func modifyMe(arg: X) {
+      if isUniquelyReferencedNonObjC(&myStorage) {
+        myStorage.modifyInPlace(arg)
+      }
+      else {
+        myStorage = self.createModified(myStorage, arg)
+      }
+    }
+
+This function is safe to use for `mutating` functions in
+multithreaded code because a false positive would imply that there
+is already a user-level data race on the value being mutated.
+
+----
+A similar example to that in `isUniquelyReferenced` except here we're using optionals
+Not shown is the non-optional version or testing it with Objective-C objects
+
+*/
 struct Stack<T> : Printable {
 	typealias StackInfo = (space: Int, depth: Int)
 	typealias StackBuffer = ManagedBuffer<StackInfo,T>

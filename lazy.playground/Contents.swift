@@ -1,19 +1,19 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Augment `s` with lazy methods such as `map`, `filter`, etc.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func lazy<S : CollectionType where S.Index : RandomAccessIndexType>(s: S) -> LazyRandomAccessCollection<S>
-// ---------------------------------------------------------------------------------------------------------------------
+# lazy
+----
 
-/// Augment `s` with lazy methods such as `map`, `filter`, etc.
+    func lazy<S : CollectionType where S.Index : RandomAccessIndexType>(s: S) -> LazyRandomAccessCollection<S>
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func lazy<S : SequenceType>(s: S) -> LazySequence<S>
-// ---------------------------------------------------------------------------------------------------------------------
+Augment `s` with lazy methods such as `map`, `filter`, etc.
 
+    func lazy<S : SequenceType>(s: S) -> LazySequence<S>
+
+Augment `s` with lazy methods such as `map`, `filter`, etc.
+    
+*/
 class FibonacciSeq : SequenceType {
 	func generate() -> GeneratorOf<Int> {
 		var index = 0, current = 0, next = 1
@@ -39,12 +39,12 @@ for _ in 1..<5 {
 }
 
 
-/// Augment `s` with lazy methods such as `map`, `filter`, etc.
+/*:
+    func lazy<S : CollectionType where S.Index : ForwardIndexType>(s: S) -> LazyForwardCollection<S>
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func lazy<S : CollectionType where S.Index : ForwardIndexType>(s: S) -> LazyForwardCollection<S>
-// ---------------------------------------------------------------------------------------------------------------------
+Augment `s` with lazy methods such as `map`, `filter`, etc.
 
+*/
 class FibonacciCol : CollectionType {
 	var results = [Int : Int]()
 
@@ -93,9 +93,10 @@ for _ in 1..<5 {
 	println(fibColGen.next())
 }
 
-/// Augment `s` with lazy methods such as `map`, `filter`, etc.
+/*:
+    func lazy<S : CollectionType where S.Index : BidirectionalIndexType>(s: S) -> LazyBidirectionalCollection<S>
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func lazy<S : CollectionType where S.Index : BidirectionalIndexType>(s: S) -> LazyBidirectionalCollection<S>
-// ---------------------------------------------------------------------------------------------------------------------
+Augment `s` with lazy methods such as `map`, `filter`, etc.
+
+*/
 

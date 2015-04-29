@@ -1,13 +1,15 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// Returns `true` iff `x` is empty.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func isEmpty<C : CollectionType>(x: C) -> Bool
-// ---------------------------------------------------------------------------------------------------------------------
+# isEmpty
+----
 
+    func isEmpty<C : CollectionType>(x: C) -> Bool
+
+Returns `true` iff `x` is empty.
+
+*/
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 let honestPoliticians : [String] = [ ]
 

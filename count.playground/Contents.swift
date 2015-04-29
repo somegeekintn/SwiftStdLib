@@ -1,13 +1,17 @@
-// ---------------------------------------------------------------------------------------------------------------------
-// Swift Standard Library examples (examples not guaranteed to be useful)
-// ---------------------------------------------------------------------------------------------------------------------
+/*: Select Editor -> Show Rendered Markup for rich comments
 
-/// O(1) if T.Index is RandomAccessIndexType; O(N) otherwise.
+_Swift Standard Library examples (examples not guaranteed to be useful)_
 
-// ---------------------------------------------------------------------------------------------------------------------
-// func count<T : _CollectionType>(x: T) -> T.Index.Distance
-// ---------------------------------------------------------------------------------------------------------------------
+# count
+----
 
+    func count<T : _CollectionType>(x: T) -> T.Index.Distance
+
+Return the number of elements in x.
+
+O(1) if T.Index is RandomAccessIndexType; O(N) otherwise.
+
+*/
 var intArray = [Int](1...20)
 let animals = [ "dog", "cat", "duck", "chicken", "cow", "snake", "bee" ]
 let animalLegs = [ ("dog", 4), ("cat", 4), ("duck", 2), ("chicken", 2), ("cow", 4), ("snake", 0), ("bee", 6) ]
