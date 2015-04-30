@@ -206,6 +206,9 @@
       location = "group:underestimateCount.playground">
    </FileRef>
    <FileRef
+      location = "group:unsafeAddressOf.playground">
+   </FileRef>
+   <FileRef
       location = "group:zip.playground">
    </FileRef>
 </Workspace>
