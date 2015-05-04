@@ -212,6 +212,9 @@
       location = "group:unsafeBitCast.playground">
    </FileRef>
    <FileRef
+      location = "group:unsafeDowncast.playground">
+   </FileRef>
+   <FileRef
       location = "group:zip.playground">
    </FileRef>
 </Workspace>
