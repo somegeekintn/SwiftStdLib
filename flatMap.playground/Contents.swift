@@ -18,9 +18,17 @@ Return an `Array` containing the results of mapping `transform`
 over `source` and flattening the result.
 
 */
-let items = [[1,2],[3,4]]
+struct ExampleStruct {
+	let val: Int
+	let items: [String]
+}
 
-println(flatMap(items) { $0 })					// similar to the example Apple provided in the release notes
+let items = [[1,2],[3,4]]
+let examples = [ExampleStruct(val: 42, items: ["The", "Answer"]), ExampleStruct(val: 11, items: ["One", "Louder"])]
+
+println("items: \(flatMap(items) { $0 })")				// similar to the example Apple provided in the release notes
+println("examples: \(flatMap(examples) { $0.items })")
+println("-----")
 /*:
     func flatMap<T, U>(x: T?, f: @noescape (T) -> U?) -> U?
 
